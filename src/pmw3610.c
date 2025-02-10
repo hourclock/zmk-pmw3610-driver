@@ -654,6 +654,7 @@ static int pmw3610_report_data(const struct device *dev) {
         speed_multiplier = 0.1;
     }
 
+    speed_multiplier = speed_multiplier * 2.0;
     raw_x = raw_x * speed_multiplier;
     raw_y = raw_y * speed_multiplier;
 
